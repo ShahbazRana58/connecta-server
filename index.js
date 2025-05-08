@@ -31,6 +31,11 @@ io.on("connection",(socket)=>{
     });
 });
 
+app.get("/", (req, res) => {
+    res.send("Welcome to Connecta Server!");
+  });
+  
+
 app.route("/check").get((req,res)=>{
     return res.json("Your App is working Fine.")
 });
